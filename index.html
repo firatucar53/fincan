@@ -7,8 +7,15 @@
   <title>Fincan Gizlilik Politikası</title>
   <style>
     :root{color-scheme:light;--ink:#2b211d;--muted:#746760;--paper:#faf7f2;--card:#f1e6d8;--accent:#b76548}
-    *{box-sizing:border-box} body{max-width:760px;margin:0 auto;padding:38px 20px 64px;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.68}
-    h1{font-size:clamp(30px,6vw,38px);letter-spacing:-.045em;line-height:1.1;margin:0 0 8px}h2{font-size:20px;margin:32px 0 8px;letter-spacing:-.015em}p,li{font-size:16px}a{color:#8e482f;font-weight:700}.updated{color:var(--muted);margin:0 0 28px}.note{padding:16px 18px;background:var(--card);border-left:3px solid var(--accent);border-radius:8px}.footer{margin-top:36px;padding-top:18px;border-top:1px solid #e3d8c8;color:var(--muted);font-size:14px}
+    *{box-sizing:border-box}
+    body{max-width:760px;margin:0 auto;padding:38px 20px 64px;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.68}
+    h1{font-size:clamp(30px,6vw,38px);letter-spacing:-.045em;line-height:1.1;margin:0 0 8px}
+    h2{font-size:20px;margin:32px 0 8px;letter-spacing:-.015em}
+    p,li{font-size:16px}
+    a{color:#8e482f;font-weight:700}
+    .updated{color:var(--muted);margin:0 0 28px}
+    .note{padding:16px 18px;background:var(--card);border-left:3px solid var(--accent);border-radius:8px}
+    .footer{margin-top:36px;padding-top:18px;border-top:1px solid #e3d8c8;color:var(--muted);font-size:14px}
   </style>
 </head>
 <body>
@@ -34,9 +41,23 @@
     <p>Uygulamanın veri uygulamaları değişirse bu politika güncellenir ve yeni tarih bu sayfada yayımlanır.</p>
 
     <h2>İletişim</h2>
-    <p class="note">Gizlilikle ilgili iletişim ve sorular için: <a href="/cdn-cgi/l/email-protection#8be3f8eeede2f9eafffee8eaf9cbece6eae2e7a5e8e4e6"><span class="__cf_email__" data-cfemail="7a12091f1c13081b0e0f191b083a1d171b131654191517">[email&#160;protected]</span></a></p>
+    <p class="note">Gizlilikle ilgili iletişim ve sorular için: <a id="privacyContact" href="#" aria-label="E-posta ile iletişim kur">E-posta hazırlanıyor…</a></p>
 
     <p class="footer">Bu gizlilik politikası Fincan – Kahve Rehberi uygulaması için hazırlanmıştır.</p>
   </main>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a44b5562eeddd2ce',t:'MTc5MTAyNDA3Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+  <script>
+    // The address is assembled in the browser so GitHub Pages serves a clean mailto link
+    // even if an intermediary tries to rewrite email addresses in static HTML.
+    (function () {
+      const localPart = 'hsefiratucar';
+      const domain = ['gmail', 'com'].join('.');
+      const address = localPart + String.fromCharCode(64) + domain;
+      const contact = document.getElementById('privacyContact');
+      contact.href = 'mailto:' + address;
+      contact.textContent = address;
+      contact.title = address;
+    }());
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a44bcf2a6d69bc04',t:'MTc5MTAyOTA2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
